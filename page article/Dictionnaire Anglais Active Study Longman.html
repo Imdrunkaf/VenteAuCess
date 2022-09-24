@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Dictionnaire Anglais Active Study Longman</title>
+        <link rel="icon" href="icone.jpg">
+        <style>
+        
+            body{
+                background-color: black;
+                color: black;
+                font-family: Baskerville;
+            }
+            
+            header{
+                border: 4px solid black;
+                background-color: wheat;
+                text-align: center;
+                font-size: 2.5em;
+                margin: 30px;
+            }
+            
+            #image1, #image2{
+                height: 800px;
+                width: 600px;
+                position: absolute;
+            }
+            
+            #image1{
+                margin-left: 410px;
+                align-items: flex-end;
+            }
+            
+            #image2{
+                margin-left: 1050px;
+            }
+            
+            aside{
+                position: absolute;
+                border-left: 5px solid black;
+                height: 200px;
+                padding: 10px;
+                padding-left: 30px;
+                margin-left: 30px;
+                font-size: 1.4em;
+                color : black;
+                background-color: wheat;
+                width: 300px;
+            }
+            
+            .nombre{
+                position: relative;
+            }
+            
+            button{
+                font-size: 0.9em;
+                font-family: Baskerville;
+            }
+            
+            #canvasID{
+                position: absolute;
+                margin-top: 219px;
+                margin-left: 35px;
+            }
+        
+        </style>
+        <script>
+        
+            var article = "Dictionnaire Anglais Active Study Longman";
+            var nombreoccasion = 1;
+            var prixoccasion = 15;
+            var canvas, ctx, width, height;
+            
+            function init(){
+                canvas = document.getElementById("canvasID");
+                ctx = canvas.getContext("2d");
+                width = canvas.width;
+                height = canvas.height;
+                document.getElementById("entete").innerHTML = article;
+                document.getElementById("occasion").innerHTML += nombreoccasion + " disponible";
+                document.getElementById("prixoccasion").innerHTML += prixoccasion + ".-";
+                if(nombreoccasion != 1){
+                    document.getElementById("occasion").innerHTML += "s";
+                }
+                initcanvas();
+            }
+            
+            function initcanvas(){
+                ctx.beginPath();
+				ctx.moveTo(0,0); 
+				ctx.lineTo(170,390);
+				ctx.lineTo(340,0);
+				ctx.closePath();
+				ctx.fillStyle="wheat";
+				ctx.fill();
+            }
+        
+        </script>
+    
+    </head>
+    <body onload="init()">
+    
+        <header id="entete">&nbsp;</header>
+        <aside>
+            <li id="prixneuf">Indisponible chez Payot </li><br>
+            <li id="occasion">État moyen : </li><br>
+            <li id="prixoccasion">Prix état moyen : </li><br>
+        </aside>
+        <canvas id="canvasID" width="339px" height="401px"></canvas>
+        <div id="image1">
+            <img src="images/Dictionnaire%20Anglais%20Active%20Study%20Longman%201.jpg">
+        </div>
+        <div id="image2">
+            <img src="images/Dictionnaire%20Anglais%20Active%20Study%20Longman%202.jpg">
+        </div>
+    
+    </body>
+
+</html>
