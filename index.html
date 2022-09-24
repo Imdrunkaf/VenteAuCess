@@ -2,67 +2,38 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <script src="script.js"></script>
         <link rel="stylesheet" href="styles.css" />
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
         />
-        <!-- <link rel="script" href="script.js" /> -->
         <title>Vente livres Cess</title>
-        <script>
-            var theme = "dark";
-
-            function changeTheme() {
-                if (theme == "light") {
-                    changeThemeDark();
-                    theme = "dark";
-                } else {
-                    changeThemeLight();
-                    theme = "light";
-                }
-            }
-
-            function changeThemeLight() {
-                document.body.style.setProperty(
-                    "--color-background",
-                    "#dbe1e8"
-                );
-                document.body.style.setProperty(
-                    "--color-background-2",
-                    "white"
-                );
-                document.body.style.setProperty("--color-text", "#12181b");
-                document.body.style.setProperty("--color-text-2", "darkgrey");
-                document.body.style.setProperty("--color-box", "black");
-                document.body.style.setProperty("--color-box-2", "grey");
-            }
-
-            function changeThemeDark() {
-                document.body.style.setProperty(
-                    "--color-background",
-                    "#12181b"
-                );
-                document.body.style.setProperty(
-                    "--color-background-2",
-                    "#2a2e35"
-                );
-                document.body.style.setProperty("--color-text", "white");
-                document.body.style.setProperty("--color-text-2", "lightgrey");
-                document.body.style.setProperty("--color-box", "white");
-                document.body.style.setProperty("--color-box-2", "lightgrey");
-            }
-
-            function changeColor() {
-                document.body.style.setProperty("--color-background", "red");
-            }
-        </script>
+        <script></script>
     </head>
     <body onload="changeThemeDark()">
         <div id="container">
             <header>
-                <span id="logo">logo</span>
-                <span id="title">Vente au Cess</span>
-                <span id="menu">menu</span>
+                <span id="logo"
+                    ><img
+                        src="images_index/logo.png"
+                        alt="logo"
+                        class="imgLogo"
+                /></span>
+                <span id="title"><h1>Vente au Cess</h1></span>
+                <!-- <span id="menu">
+                    <a href="menu.html"><menu></menu></a>
+                </span> -->
+                <span class="contact">
+                    Contact :
+                    <br />
+
+                    <a
+                        href="https://instagram.com/livres_cess_ouest?igshid=YmMyMTA2M2Y="
+                        target="_blank"
+                        >Instagram : livres_cess_ouest</a
+                    >
+                </span>
                 <span id="themechange">
                     <button onclick="changeTheme()">Theme</button>
                     <a href="...">
@@ -75,6 +46,7 @@
                 <div class="content">
                     <a href="page article/Anglais Le mot pour dire.html">
                         <img
+                            class="imgArticle"
                             src="page article/images/Anglais Le mot pour dire 1.jpg"
                             alt="Anglais Le mot pour dire"
                         />
@@ -88,6 +60,7 @@
                 <div class="content">
                     <a href="page article/Atlas mondial suisse.html">
                         <img
+                            class="imgArticle"
                             src="page article/images/Atlas mondial suisse 1.jpg"
                             alt="Atlas mondial suisse"
                         />
@@ -101,6 +74,7 @@
                 <div class="content">
                     <a href="page article/CCCO Edition commerciale.html">
                         <img
+                            class="imgArticle"
                             src="page article/images/CCCO Edition commerciale 1.jpg"
                             alt="CCCO Edition commerciale"
                         />
@@ -116,6 +90,7 @@
                         href="page article/Dictionnaire Anglais-Français Larousse 200'000 mots.html"
                     >
                         <img
+                            class="imgArticle"
                             src="page article/images/Dictionnaire Anglais-Français Larousse 200'000 mots 1.jpg"
                             alt="Dictionnaire Anglais-Français Larousse 200'000 mots"
                         />
@@ -134,6 +109,7 @@
                         href="page article/Dictionnaire Français Le Robert Poche 75'000 mots.html"
                     >
                         <img
+                            class="imgArticle"
                             src="page article/images/Dictionnaire Français Le Robert Poche 75'000 mots 1.jpg"
                             alt="Dictionnaire Français Le Robert Poche 75'000 mots"
                         />
@@ -150,6 +126,7 @@
                 <div class="content">
                     <a href="page article/Code des obligations suisses.html">
                         <img
+                            class="imgArticle"
                             src="page article/images/Code des obligations suisses 1.jpg"
                             alt="Code des obligations suisses"
                         />
@@ -165,6 +142,7 @@
                 <div class="content">
                     <a href="page article/Code civil suisse.html">
                         <img
+                            class="imgArticle"
                             src="page article/images/Code civil suisse 1.jpg"
                             alt="Code civil suisse"
                         />
@@ -174,10 +152,155 @@
                         </div>
                     </a>
                 </div>
-
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+                <div class="content">
+                    <a
+                        href="page article/Dictionnaire Français Le Robert brio.html"
+                    >
+                        <img
+                            class="imgArticle"
+                            src="page article/images/Dictionnaire Français Le Robert brio 1.jpg"
+                            alt="Dictionnaire Français Le Robert brio"
+                        />
+                        <div class="description">
+                            <div class="itemName">
+                                Dictionnaire Français Le Robert brio
+                            </div>
+                            <div class="price">25.-</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+                <div class="content">
+                    <a href="page article/The Golden Grammar Book.html">
+                        <img
+                            class="imgArticle"
+                            src="page article/images/The Golden Grammar Book 1.jpg"
+                            alt="The Golden Grammar Book"
+                        />
+                        <div class="description">
+                            <div class="itemName">The Golden Grammar Book</div>
+                            <div class="price">20.-</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+                <div class="content">
+                    <a
+                        href="page article/Dictionnaire Français Le Petit Larousse 1994.html"
+                    >
+                        <img
+                            class="imgArticle"
+                            src="page article/images/Dictionnaire Français Le Petit Larousse 1994 1.jpg"
+                            alt="Dictionnaire Français Le Petit Larousse 1994"
+                        />
+                        <div class="description">
+                            <div class="itemName">
+                                Dictionnaire Français Le Petit Larousse 1994
+                            </div>
+                            <div class="price">20.-</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+                <div class="content">
+                    <a
+                        href="page article/Dictionnaire Français Le Robert Poche 76'000 mots.html"
+                    >
+                        <img
+                            class="imgArticle"
+                            src="page article/images/Dictionnaire Français Le Robert Poche 76'000 mots 1.jpg"
+                            alt="Dictionnaire Français Le Robert Poche 76'000 mots"
+                        />
+                        <div class="description">
+                            <div class="itemName">
+                                Dictionnaire Français Le Robert Poche 76'000
+                                mots
+                            </div>
+                            <div class="price">9.-</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+                <div class="content">
+                    <a
+                        href="page article/Dictionnaire Allemand-Français PONS.html"
+                    >
+                        <img
+                            class="imgArticle"
+                            src="page article/images/Dictionnaire Allemand-Français PONS 1.jpg"
+                            alt="Dictionnaire Allemand-Français PONS"
+                        />
+                        <div class="description">
+                            <div class="itemName">
+                                Dictionnaire Allemand-Français PONS
+                            </div>
+                            <div class="price">20.-</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+                <div class="content">
+                    <a
+                        href="page article/Dictionnaire Le Robert Poche 76'000 mots.html"
+                    >
+                        <img
+                            class="imgArticle"
+                            src="page article/images/Dictionnaire Le Robert Poche 76'000 mots 1.jpg"
+                            alt="Dictionnaire Le Robert Poche 76'000 mots"
+                        />
+                        <div class="description">
+                            <div class="itemName">
+                                Dictionnaire Le Robert Poche 76'000 mots
+                            </div>
+                            <div class="price">9.-</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+                <div class="content">
+                    <a
+                        href="page article/Dictionnaire Français Le Robert Poche 63'000 mots.html"
+                    >
+                        <img
+                            class="imgArticle"
+                            src="page article/images/Dictionnaire Français Le Robert Poche 63'000 mots 1.jpg"
+                            alt="Dictionnaire Français Le Robert Poche 63'000 mots"
+                        />
+                        <div class="description">
+                            <div class="itemName">
+                                Dictionnaire Français Le Robert Poche 63'000
+                                mots
+                            </div>
+                            <div class="price">11.-</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+                <div class="content">
+                    <a
+                        href="page article/Dictionnaire Allemand-Français Larousse Poche.html"
+                    >
+                        <img
+                            class="imgArticle"
+                            src="page article/images/Dictionnaire Allemand-Français Larousse Poche 1.jpg"
+                            alt="Dictionnaire Allemand-Français Larousse Poche"
+                        />
+                        <div class="description">
+                            <div class="itemName">
+                                Dictionnaire Allemand-Français Larousse Poche
+                            </div>
+                            <div class="price">11.-</div>
+                        </div>
+                    </a>
+                </div>
                 <!-- end-->
             </div>
-            <footer>hehe</footer>
+            <footer>
+                <span class="us"
+                    >sisox23 and imdrunkaf wish you a pleasant day :)</span
+                >
+            </footer>
         </div>
     </body>
 </html>
