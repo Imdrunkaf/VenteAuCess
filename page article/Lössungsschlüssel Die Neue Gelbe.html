@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
-
     <head>
-    
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <title>Lössungsschlüssel Die Neue Gelbe</title>
-        <link rel="icon" href="icone.jpg">
+        <link rel="icon" href="icone.jpg" />
         <style>
-        
-            body{
+            body {
                 background-color: black;
                 color: black;
                 font-family: Baskerville;
             }
-            
-            header{
+
+            header {
                 border: 4px solid black;
                 background-color: wheat;
                 text-align: center;
                 font-size: 2.5em;
                 margin: 30px;
             }
-            
-            #image1, #image2{
+
+            #image1,
+            #image2 {
                 height: 800px;
                 width: 600px;
                 position: absolute;
             }
-            
-            #image1{
+
+            #image1 {
                 margin-left: 410px;
                 align-items: flex-end;
             }
-            
-            #image2{
+
+            #image2 {
                 margin-left: 1050px;
             }
-            
-            aside{
+
+            aside {
                 position: absolute;
                 border-left: 5px solid black;
                 height: 200px;
@@ -45,85 +43,90 @@
                 padding-left: 30px;
                 margin-left: 30px;
                 font-size: 1.4em;
-                color : black;
+                color: black;
                 background-color: wheat;
                 width: 300px;
             }
-            
-            .nombre{
+
+            .nombre {
                 position: relative;
             }
-            
-            button{
+
+            button {
                 font-size: 0.9em;
                 font-family: Baskerville;
             }
-            
-            #canvasID{
+
+            #canvasID {
                 position: absolute;
                 margin-top: 219px;
                 margin-left: 35px;
             }
-        
         </style>
         <script>
-        
             var article = "Lössungsschlüssel Die Neue Gelbe";
-            var nombreneuf = 3;
+            var nombreneuf = 0;
             var nombreoccasion = 1;
             var prixneuf = 30;
-            var prixoccasion = 20;
+            var prixoccasion = 10;
             var canvas, ctx, width, height;
-            
-            function init(){
+
+            function init() {
                 canvas = document.getElementById("canvasID");
                 ctx = canvas.getContext("2d");
                 width = canvas.width;
                 height = canvas.height;
                 document.getElementById("entete").innerHTML = article;
-                document.getElementById("neuf").innerHTML += nombreneuf + " restant";
-                document.getElementById("occasion").innerHTML += nombreoccasion + " restant";
-                document.getElementById("prixneuf").innerHTML += prixneuf + ".-";
-                document.getElementById("prixoccasion").innerHTML += prixoccasion + ".-";
-                if(nombreneuf != 1){
+                document.getElementById("neuf").innerHTML +=
+                    nombreneuf + " restant";
+                document.getElementById("occasion").innerHTML +=
+                    nombreoccasion + " restant";
+                document.getElementById("prixneuf").innerHTML +=
+                    prixneuf + ".-";
+                document.getElementById("prixoccasion").innerHTML +=
+                    prixoccasion + ".-";
+                if (nombreneuf != 1) {
                     document.getElementById("neuf").innerHTML += "s";
                 }
-                if(nombreoccasion != 1){
+                if (nombreoccasion != 1) {
                     document.getElementById("occasion").innerHTML += "s";
                 }
                 initcanvas();
             }
-            
-            function initcanvas(){
+
+            function initcanvas() {
                 ctx.beginPath();
-				ctx.moveTo(0,0); 
-				ctx.lineTo(170,390);
-				ctx.lineTo(340,0);
-				ctx.closePath();
-				ctx.fillStyle="wheat";
-				ctx.fill();
+                ctx.moveTo(0, 0);
+                ctx.lineTo(170, 390);
+                ctx.lineTo(340, 0);
+                ctx.closePath();
+                ctx.fillStyle = "wheat";
+                ctx.fill();
             }
-        
         </script>
-    
     </head>
     <body onload="init()">
-    
         <header id="entete">&nbsp;</header>
         <aside>
-            <li id="neuf">Livres neufs : </li><br>
-            <li id="occasion">D'occasion : </li><br>
-            <li id="prixneuf">Prix à neuf : </li><br>
-            <li id="prixoccasion">Prix d'occasion : </li><br>
+            <li id="neuf">Livres neufs :</li>
+            <br />
+            <li id="occasion">D'occasion :</li>
+            <br />
+            <li id="prixneuf">Prix à neuf :</li>
+            <br />
+            <li id="prixoccasion">Prix d'occasion :</li>
+            <br />
         </aside>
         <canvas id="canvasID" width="339px" height="401px"></canvas>
         <div id="image1">
-            <img src="images/L%C3%B6ssungsschl%C3%BCssel%20Die%20Neue%20Gelbe%201.jpg">
+            <img
+                src="images/L%C3%B6ssungsschl%C3%BCssel%20Die%20Neue%20Gelbe%201.jpg"
+            />
         </div>
         <div id="image2">
-            <img src="images/L%C3%B6ssungsschl%C3%BCssel%20Die%20Neue%20Gelbe%202.jpg">
+            <img
+                src="images/L%C3%B6ssungsschl%C3%BCssel%20Die%20Neue%20Gelbe%202.jpg"
+            />
         </div>
-    
     </body>
-
 </html>
