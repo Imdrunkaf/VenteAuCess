@@ -1,3 +1,4 @@
+import{GGB} from "/page article/English/The  Golden Grammar Book/script.js"
 var theme = "dark";
 
 function changeTheme() {
@@ -30,4 +31,33 @@ function changeThemeDark() {
 
 function changeColor() {
     document.body.style.setProperty("--color-background", "red");
+}
+var contentList = [];
+contentList.push(GGB);
+
+function filterContentByTag(tag){
+    console.log(contentList);
+    filteredList = contentList.filter(content => content.tags.includes(tag));
+    displayContent(filteredList);
+}
+
+function displayContent(contentList){
+    var mainDiv = document.getElementById("main");
+
+    mainDiv.innerHTML = "";
+
+    for (var i = 0; i < contentList.length; i++) {
+        var contentHtml = `
+            <div class="content">
+                <a href="${contentList[i].href}">
+                    <img class="imgArticle" src="${contentList[i].imgSrc}" alt="${contentList[i].alt}" />
+                    <div class="description">
+                        <div class="itemName">${contentList[i].itemName}</div>
+                    </div>
+                </a>
+            </div>
+        `;
+
+        mainDiv.innerHTML += contentHtml;
+    }
 }

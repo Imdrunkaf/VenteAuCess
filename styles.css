@@ -1,10 +1,12 @@
 :root {
-    --color-background: ;
-    --color-background-2: ;
-    --color-text: ;
-    --color-text-2: ;
-    --color-box: ;
-    --color-box-2: ;
+    --color-background: #121212 ;
+    --color-background-2: #202020;
+    --color-text: #FFFFFF;
+    --color-text-2: #BBBBBB;
+    --color-box:#FFFFFF ;
+    --color-box-2: #BBBBBB;
+    --accent-color: #3F51B5;
+    --accent-color-2: #ff4081;
 }
 
 html {
