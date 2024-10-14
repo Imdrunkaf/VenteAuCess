@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Item Details</title>
-        <link rel="stylesheet" href="assets/css/styles.css" />
+        <title>Details</title>
+        <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+        <link
+            rel="preload"
+            href="assets/css/styles.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        />
     </head>
     <body>
         <header>
@@ -16,6 +22,9 @@
                 <!-- Dynamic content will go here -->
             </div>
         </main>
-        <script src="assets/js/item.js"></script>
+        <footer>
+            <p>© 2024 Vente Au Cess</p>
+        </footer>
+        <script src="assets/js/item.js" defer></script>
     </body>
 </html>

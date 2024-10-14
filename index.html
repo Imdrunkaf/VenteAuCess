@@ -4,20 +4,29 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vente Au Cess</title>
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <script src="assets/js/script.js"></script>
+        <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+        <link
+            rel="preload"
+            href="assets/css/styles.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        />
     </head>
     <body>
         <header>
-            <h1>My Online Store</h1>
+            <h1>Vente Au Cess</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="VenteAuCess.html">test</a>
         </header>
         <main>
             <section class="item-list">
-                <!-- List items will go here -->
+                <div id="item-container"></div>
             </section>
         </main>
         <footer>
             <p>© 2024 Vente Au Cess</p>
         </footer>
+        <script src="assets/js/script.js" defer></script>
     </body>
 </html>
