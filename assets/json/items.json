@@ -1,0 +1,115 @@
+[
+    {
+        "id": 1,
+        "name": "Golden Grammar Book",
+        "price": 100,
+        "imageFront": "assets/images/books/english/ggb/front.jpg",
+        "imageBack": "assets/images/books/english/ggb/back.jpg",
+        "description": "The Golden Grammar Book is a comprehensive guide to English grammar. It is suitable for students of all levels.",
+        "author": "Tom Spencer",
+        "publisher": "Editions Loisir et Pédagogie",
+        "isbn": "???",
+        "pages": 0,
+        "year": 0,
+        "state": {
+            "new": {
+                "quantity": 0,
+                "price": 0
+            },
+            "likeNew": {
+                "quantity": 0,
+                "price": 0
+            },
+            "good": {
+                "quantity": 0,
+                "price": 0
+            },
+            "used": {
+                "quantity": 0,
+                "price": 0
+            },
+            "veryUsed": {
+                "quantity": 0,
+                "price": 0
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "Item 2",
+        "price": 150,
+        "imageFront": "assets/images/books/german/pons_dict/front.jpg",
+        "imageBack": "assets/images/books/german/pons_dict/back.jpg",
+        "description": "Another amazing product."
+    },
+    {
+        "id": 1,
+        "name": "Golden Grammar Book",
+        "price": 100,
+        "imageFront": "assets/images/books/english/ggb/front.jpg",
+        "imageBack": "assets/images/books/english/ggb/back.jpg",
+        "description": "The Golden Grammar Book is a comprehensive guide to English grammar. It is suitable for students of all levels.",
+        "author": "Tom Spencer",
+        "publisher": "Editions Loisir et Pédagogie",
+        "isbn": "???",
+        "pages": 0,
+        "year": 0,
+        "state": {
+            "new": {
+                "quantity": 0,
+                "price": 0
+            },
+            "likeNew": {
+                "quantity": 0,
+                "price": 0
+            },
+            "good": {
+                "quantity": 0,
+                "price": 0
+            },
+            "used": {
+                "quantity": 0,
+                "price": 0
+            },
+            "veryUsed": {
+                "quantity": 0,
+                "price": 0
+            }
+        }
+    },
+    {
+        "id": 1,
+        "name": "Golden Grammar Book",
+        "price": 100,
+        "imageFront": "assets/images/books/english/ggb/front.jpg",
+        "imageBack": "assets/images/books/english/ggb/back.jpg",
+        "description": "The Golden Grammar Book is a comprehensive guide to English grammar. It is suitable for students of all levels.",
+        "author": "Tom Spencer",
+        "publisher": "Editions Loisir et Pédagogie",
+        "isbn": "???",
+        "pages": 0,
+        "year": 0,
+        "state": {
+            "new": {
+                "quantity": 0,
+                "price": 0
+            },
+            "likeNew": {
+                "quantity": 0,
+                "price": 0
+            },
+            "good": {
+                "quantity": 0,
+                "price": 0
+            },
+            "used": {
+                "quantity": 0,
+                "price": 0
+            },
+            "veryUsed": {
+                "quantity": 0,
+                "price": 0
+            }
+        }
+    }
+]
